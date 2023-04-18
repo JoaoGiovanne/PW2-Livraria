@@ -27,9 +27,9 @@ public class LivroTeste {
         editora2.email = "EditoraUai@gmail.com";
         livroFavorito.editora = editora2;
         livroFavorito.aplicarDesconto(0.25);
+        livroFavorito.tipoCapa = TipoCapaEnum.PERSONALIZADA;
 
         livroFavorito.exibirDados();
 
     }
-
 }
