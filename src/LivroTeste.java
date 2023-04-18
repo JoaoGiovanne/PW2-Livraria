@@ -4,30 +4,30 @@ public class LivroTeste {
 
         Livro meuLivro = new Livro("O Hobbit", 9.99);
         //meuLivro.nome = "O Hobbit";
-        meuLivro.paginas = 521;
-        meuLivro.resumo = "bla bla bla bla bla";
-        meuLivro.autor = "J. R. Tolkien";
+        meuLivro.setPaginas(521);
+        meuLivro.setResumo("bla bla bla bla bla");
+        meuLivro.setAutor("J. R. Tolkien");
 
         Editora editora1 = new Editora();
         //editora1.nome = "JojoGigi";
         editora1.email = "EditoraJojoGigi@gmail.com";
-        meuLivro.editora = editora1;
-        meuLivro.aplicarDesconto(0.1);
+        meuLivro.setEditora(editora1);
+        meuLivro.aplicarDesconto(0.5);
 
         meuLivro.exibirDados();
 
         Livro livroFavorito = new Livro("O Código Da Vinci", 99.9);
         //livroFavorito.nome = "O Código Da Vinci";
-        livroFavorito.resumo = "bla bla bla bla bla";
-        livroFavorito.paginas = 500;
-        livroFavorito.autor = "Dan Brown";
+        livroFavorito.setResumo("bla bla bla bla bla");
+        livroFavorito.setPaginas(500);
+        livroFavorito.setAutor("Dan Brown");
 
         Editora editora2 = new Editora("JojoGigi");
         //editora2.nome = "Uai";
         editora2.email = "EditoraUai@gmail.com";
-        livroFavorito.editora = editora2;
+        livroFavorito.setEditora(editora2);
         livroFavorito.aplicarDesconto(0.25);
-        livroFavorito.tipoCapa = TipoCapaEnum.PERSONALIZADA;
+        livroFavorito.setTipoCapa(TipoCapaEnum.PERSONALIZADA);
 
         livroFavorito.exibirDados();
 
