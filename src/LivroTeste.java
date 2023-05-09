@@ -16,12 +16,23 @@ public class LivroTeste {
 
         meuLivro.exibirDados();
 
-        Livro livroFavorito = new Livro("O Código Da Vinci", 99.9);
-        //livroFavorito.nome = "O Código Da Vinci";
+//        Livro livroFavorito = new Livro("O Código Da Vinci", 99.9);
+//        //livroFavorito.nome = "O Código Da Vinci";
+//        livroFavorito.setResumo("bla bla bla bla bla");
+//        livroFavorito.setPaginas(500);
+//        livroFavorito.setAutor("Dan Brown");
+//        Editora editora2 = new Editora("JojoGigi");
+//        //editora2.nome = "Uai";
+//        editora2.email = "EditoraUai@gmail.com";
+//        livroFavorito.setEditora(editora2);
+//        livroFavorito.aplicarDesconto(0.25);
+//        livroFavorito.setTipoCapa(TipoCapaEnum.PERSONALIZADA);
+
+        LivroDigital livroFavorito = new LivroDigital("O Código Da Vinci", 99.9);
         livroFavorito.setResumo("bla bla bla bla bla");
         livroFavorito.setPaginas(500);
         livroFavorito.setAutor("Dan Brown");
-
+        livroFavorito.setMarcaDAgua("teste@teste.com");
         Editora editora2 = new Editora("JojoGigi");
         //editora2.nome = "Uai";
         editora2.email = "EditoraUai@gmail.com";
@@ -30,6 +41,5 @@ public class LivroTeste {
         livroFavorito.setTipoCapa(TipoCapaEnum.PERSONALIZADA);
 
         livroFavorito.exibirDados();
-
     }
 }
