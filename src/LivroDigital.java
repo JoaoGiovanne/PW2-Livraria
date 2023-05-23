@@ -19,7 +19,7 @@ public class LivroDigital extends Livro{
         if (percentual > 0.15)
             System.out.println("Desconto nao permitido");
         else {
-            super.aplicarDesconto(percentual);
+            preco = preco - (preco * percentual);
         }
     }
 
@@ -28,9 +28,4 @@ public class LivroDigital extends Livro{
          super.exibirDados();
          System.out.println("Marca d´agua: " + marcaDAgua);
     }
-
-
-    }
-
-
-
+}

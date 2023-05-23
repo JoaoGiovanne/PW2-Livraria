@@ -81,14 +81,9 @@ public abstract class Livro {
             System.out.println("Editora: " + editora.nome);
             System.out.println("Email Editora: " + editora.email);
         System.out.println("-------");
-    }
+}
 
-    void aplicarDesconto(double percentual) {
-        if (percentual > 0.3)
-            System.out.println("Desconto nao permitido");
-        else
-            preco = preco - (preco * percentual);
-    }
+    abstract void aplicarDesconto(double percentual);
 
     boolean temEditora() {
         if (editora == null){
@@ -98,6 +93,4 @@ public abstract class Livro {
             return true;
         }
     }
-
-
 }
